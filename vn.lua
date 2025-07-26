@@ -13,6 +13,7 @@ getgenv().ConfigsKaitun = {
 			"Moon Blossom",
 			"Bone Blossom",
 			"Moon Melon",
+			"Maple Apple",
 			"Fossilight"
 		}
 	},
@@ -87,7 +88,8 @@ getgenv().ConfigsKaitun = {
 				"Dragon Pepper",
 				"Pink Lily",
 				"Purple Dahlia",
-				"Honeysuckle"
+				"Honeysuckle",
+				"Maple Apple"
 			}
 		}
 	},
