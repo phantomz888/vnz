@@ -89,7 +89,8 @@ getgenv().ConfigsKaitun = {
 				"Pink Lily",
 				"Purple Dahlia",
 				"Honeysuckle",
-				"Maple Apple"
+				"Maple Apple",
+				"Tranquil Bloom"
 			}
 		}
 	},
@@ -215,6 +216,9 @@ getgenv().ConfigsKaitun = {
 			"Spinosaurus",
 			"Ankylosaurus",
 			"Kitsune",
+			"Corrupted Kitsune",
+			"Mizuchi",
+			"Raiju",
 			["Bald Eagle"] = 5,
 			["Moon Cat"] = 10,
 			["Chicken"] = 2,
