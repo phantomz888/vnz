@@ -150,13 +150,7 @@ getgenv().ConfigsKaitun = {
 			"Raiju",
 		},
 		Start_Do_Honey = 2_000_000 -- start trade fruit for honey at money
-	},
-
-		Restocks_limit = 500 000 000 000,
-		MinimumChi = 100
-	},
-
-	
+	},	
 	Gear = {
 		Buy = { 
 			"Master Sprinkler",
