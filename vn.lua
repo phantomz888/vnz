@@ -1,6 +1,8 @@
 setfpscap(3)
 task.wait(10)
 getgenv().ConfigsKaitun = {
+	["Block Pet Gift"] = true,
+
 	["Low Cpu"] = true,
 
 	["Rejoin When Update"] = false,
@@ -14,7 +16,15 @@ getgenv().ConfigsKaitun = {
 			"Bone Blossom",
 			"Moon Melon",
 			"Maple Apple",
-			"Fossilight"
+			"Fossilight",
+
+			-- locked fruit for zen event
+			["Tomato"] = 1, ["Strawberry"] = 1, ["Blueberry"] = 1,
+			["Orange Tulip"] = 1, ["Corn"] = 1, ["Daffodil"] = 1,
+			["Bamboo"] = 1, ["Apple"] = 1, ["Coconut"] = 1,
+			["Pumpkin"] = 1, ["Watermelon"] = 1, ["Cactus"] = 1,
+			["Dragon Fruit"] = 1, ["Mango"] = 1, ["Grape"] = 1,
+			["Mushroom"] = 1, ["Pepper"] = 1, ["Cacao"] = 1
 		}
 	},
 
@@ -132,9 +142,10 @@ getgenv().ConfigsKaitun = {
 			"Koi",
 			--"Spiked Mango",
 			--"Pet Shard Tranquil",
+			"Raiju",
 		},
-		Restocks_limit = 50000000000,
-		MinimumChi = 10
+		Restocks_limit = 500000000000,
+		MinimumChi = 100
 	},
 
 	
@@ -183,54 +194,54 @@ getgenv().ConfigsKaitun = {
 		["Start Delete Pet At"] = 40,
 		["Upgrade Slot"] = {
 			["Pet"] = {
-				"Starfish",
-                                "Petal Bee",
-                                "Bee",
+				["Starfish"] = { 8, 75, 1 },
 			},
-			["Limit Upgrade"] = 8,
+			["Limit Upgrade"] = 5,
 			["Equip When Done"] = {
-				"Capybara",
-				"Dilophosaurus",
-				"Ostrich",
-				"Starfish",
-                                "Petal Bee",
-                                "Bee",
-                                "Honey Bee",
-
-
+				["Tarantula Hawk"] = { 2, 101, 1 },
+				["Blood Kiwi"] = { 4, 101, 2 },
+				["Rooster"] = { 2, 101, 3 },
+				["Starfish"] = { 8, 75, 4 },
 			},
 		},
+		Locked_Pet_Age = 50, -- pet that age > 60 will lock
 		Locked = {
+			"Corrupted Kitsune",
+			"Kitsune",
+			"Kappa",
+			"Tanchozuru",
 			"Disco Bee",
 			"Butterfly",
-			"Mimic Octopus",
 			"Queen Bee",
 			"Dragonfly",
 			"Raccoon",
 			"Red Fox",
-			"Fennec Fox",
-			"Bald Eagle",
-			"T-Rex",
-                        "Koi",
+			"Mimic Octopus",
+			"Hyacinth Macaw",
 			"Brontosaurus",
-			"Spinosaurus",
+			"Dilophosaurus",
 			"Ankylosaurus",
-			"Kitsune",
-			"Corrupted Kitsune",
+			"Spinosaurus",
+			"T-Rex",
 			"Mizuchi",
 			"Raiju",
+			"Corrupted Kodama",
+			["Tarantula Hawk"] = 2,
 			["Bald Eagle"] = 5,
 			["Moon Cat"] = 10,
 			["Chicken"] = 2,
-			["Rooster"] = 4,
+			["Rooster"] = 2,
 			["Blood Kiwi"] = 5,
 			["Ostrich"] = 5,
+			["Kappa"] = 5,
 			["Capybara"] = 5,
 			["Praying Mantis"] = 5,
-			["Scarlet Macaw"] = 5,
-			["Dilophosaurus"] = 5,
+			["Starfish"] = 10,
+			["Nihonzaru"] = 5,
+			["Triceratops"] = 5,
+			["Bee"] = 3,
 		},
-		LockPet_Weight = 7, -- if Weight >= 7 they will locked,
+		LockPet_Weight = 5, -- if Weight >= 7 they will locked,
 		Instant_Sell = {
 
 		}
