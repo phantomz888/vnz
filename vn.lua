@@ -112,39 +112,47 @@ getgenv().ConfigsKaitun = {
 	},
 	
 	Events = {
+		["Zen Event"] = {
+			["Restocking"] = { -- Minimumthing to restock
+				Max_Restocks_Price = 500_000_000_000,
+				Minimum_Money = 5_000_000,
+				Minimum_Chi = 100
+			},
+			["Doing"] = {
+				Minimum_Money = 100_000, -- minimum money to start play this event
+				First_Upgrade_Tree = 7,
+				Maximum_Chi = 400,
+			}
+		},
 		["Traveling Shop"] = {
 			"Bald Eagle",
-			"Night Staff",
-			"Bee Egg",
-			"Star Caller"
+			"Star Caller",
+			"Bee Egg"
 		},
 		Craft = {
-			"Primal Egg",
-			"Ancient Seed Pack",
 			"Anti Bee Egg",
-			"Honeysuckle",
+			"Primal Egg",
+			--"Ancient Seed Pack",
+			--"Honeysuckle",
 			"Small Treat",
 			"Small Toy",
 			"Lightning Rod"
 		},
 		Shop = {
-			--"Traveler's Fruit",
-			--"Summer Seed Pack",
-			--"Flower Seed Pack",
-			--"Hamster",
-			--"Oasis Egg",
-			--"Delphinium",
-			--"Lily of the Valley",
-			--"Zen Seed Pack",
 			"Zen Egg",
-			--"Zenflare",
-			--"Soft Sunshine",
-			"Koi",
+			--"Zen Seed Pack",
 			--"Spiked Mango",
 			--"Pet Shard Tranquil",
+			--"Pet Shard Corrupted",
+			--"Koi",
+			--"Soft Sunshine",
+			--"Sakura Bush",
 			"Raiju",
 		},
-		Restocks_limit = 500000000000,
+		Start_Do_Honey = 2_000_000 -- start trade fruit for honey at money
+	},
+
+		Restocks_limit = 500 000 000 000,
 		MinimumChi = 100
 	},
 
