@@ -150,7 +150,8 @@ getgenv().ConfigsKaitun = {
 			"Raiju",
 		},
 		Start_Do_Honey = 2_000_000 -- start trade fruit for honey at money
-	},	
+	},
+	
 	Gear = {
 		Buy = { 
 			"Master Sprinkler",
