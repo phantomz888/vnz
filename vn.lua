@@ -20,6 +20,7 @@ getgenv().ConfigsKaitun = {
 			"Moon Melon",
 			"Maple Apple",
 			"Fossilight",
+			"Tranquil Bloom",
 			"Grand Tomato",
 		}
 	},
@@ -46,6 +47,7 @@ getgenv().ConfigsKaitun = {
 				"Moon Mango",
 				"Bone Blossom",
 				"Fossilight",
+				"Tranquil Bloom",
 				"Grand Tomato",
 			}
 		}
