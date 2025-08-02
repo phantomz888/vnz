@@ -3,140 +3,88 @@ task.wait(10)
 getgenv().ConfigsKaitun = {
 	["Block Pet Gift"] = true,
 
+	Collect_Cooldown = 60, -- cooldown to collect fruit
+	JustFuckingCollectAll = false, -- Collect all (fruit not wait mutation)
+
 	["Low Cpu"] = true,
+	["Auto Rejoin"] = true,
 
 	["Rejoin When Update"] = false,
-	
 	["Limit Tree"] = {
-		["Limit"] = 250,
-		["Destroy Untill"] = 200,
-		
+		["Limit"] = 200,
+		["Destroy Untill"] = 150,
+
 		["Safe Tree"] = {
 			"Moon Blossom",
 			"Bone Blossom",
 			"Moon Melon",
 			"Maple Apple",
 			"Fossilight",
-
-			-- locked fruit for zen event
-			["Tomato"] = 5, ["Strawberry"] = 5, ["Blueberry"] = 5,
-			["Orange Tulip"] = 5, ["Corn"] = 5, ["Daffodil"] = 5,
-			["Bamboo"] = 5, ["Apple"] = 5, ["Coconut"] = 5,
-			["Pumpkin"] = 5, ["Watermelon"] = 5, ["Cactus"] = 5,
-			["Dragon Fruit"] = 5, ["Mango"] = 5, ["Grape"] = 5,
-			["Mushroom"] = 5, ["Pepper"] = 5, ["Cacao"] = 5
+			"Grand Tomato",
 		}
 	},
 
 	Seed = {
 		Buy = {
 			Mode = "Auto", -- Custom , Auto
-			Custom = {
-				"Tomato",
-				"Bamboo",
+			Custom = { -- any fruit u need to place
 				"Carrot",
-				"Watermelon",
-				"Pumpkin",
-				"Mushroom",
-				"Cacao",
-				"Pepper",
-				"Grape",
-				"Mango",    
-				"Dragon Fruit",
-				"Lilac",
-				"Ember Lily",
-				"Crocus",
-				"Succulent",
-				"Violet Corn",
-				"Bendboo",
-				"Cocovine",
-				"Green Apple",
-				"Avocado",
-				"Banana",
-				"Pineapple",
-				"Bell Pepper",
-				"Prickly Pear",
-				"Loquat",
-				"Feijoa",
-				"Sugar Apple",
-				"Rafflesia",
-				"Pitcher",
-				"Wild Carrot",
-				"Pear",
-				"Cantaloupe",
-				"Parasol Flower",
-				"Rosy Delight",
-				"Liberty Lily",
-				"Firework Flower",
-				"Burning",
-				"Stonebite",
-				"Paradise Petal",
-				"Horned Dinoshroom",
-				"Boneboo",
-				"Firefly Fern",
-				"Fossilight",
-				"Bone Blossom",
-				"Monoblooma",
-				"Serenity",
-				"Taro Flower",
-				"Zen Rocks",
-				"Hinomai",
-				"Maple Apple",
-				"Zenflare",
-				"Soft Sunshine",
-				"Spiked",
 			}
 		},
 		Place = {
 			Mode = "Lock", -- Select , Lock
 			Select = {
-
+				"Carrot"
 			},
 			Lock = {
-				"Sunflower",
-				"Elephant Ears",
-				"Dragon Pepper",
-				"Pink Lily",
-				"Purple Dahlia",
-				"Honeysuckle",
 				"Maple Apple",
-				"Tranquil Bloom"
+				"Sunflower",
+				"Dragon Pepper",
+				"Elephant Ears",
+				"Moon Melon",
+				"Easter Egg",
+				"Moon Mango",
+				"Bone Blossom",
+				"Fossilight",
+				"Grand Tomato",
 			}
 		}
 	},
-	
+
 	["Seed Pack"] = {
 		Locked = {
-			
+
 		}
 	},
-	
+
 	Events = {
+		["Cook Event"] = {
+			Minimum_Money = 30_000_000, -- minimum money to start play this event
+		},
 		["Zen Event"] = {
 			["Restocking"] = { -- Minimumthing to restock
 				Max_Restocks_Price = 250_000_000_000,
 				Minimum_Money = 5_000_000,
-				Minimum_Chi = 100
+				Minimum_Chi = 200
 			},
 			["Doing"] = {
 				Minimum_Money = 100_000, -- minimum money to start play this event
-				First_Upgrade_Tree = 1,
-				Maximum_Chi = 400,
+				First_Upgrade_Tree = 4,
+				Maximum_Chi = 300,
+
+				-- // thing to skip doing
+				Skip_Fox = false, -- Skip The Middle Fox Trade (Corrupted Kitsune)
+				Skip_Corrupted_OldMan = false, -- Skip The OldMan Trade (Kodama)
+				-- If u need to skip Tranquill OldMan Set "First Upgrade Tree" To 0 and Max Chi To 99999
 			}
 		},
 		["Traveling Shop"] = {
-			"Bald Eagle",
-			"Star Caller",
-			"Bee Egg"
+			"Bee Egg",
 		},
 		Craft = {
+			"Ancient Seed Pack",
 			"Anti Bee Egg",
 			"Primal Egg",
-			--"Ancient Seed Pack",
-			--"Honeysuckle",
-			"Small Treat",
-			"Small Toy",
-			"Lightning Rod"
 		},
 		Shop = {
 			"Zen Egg",
@@ -147,10 +95,10 @@ getgenv().ConfigsKaitun = {
 			--"Koi",
 			--"Soft Sunshine",
 			--"Sakura Bush",
-			--"Raiju",
+			"Raiju",
 		},
 		Start_Do_Honey = 2_000_000 -- start trade fruit for honey at money
-	},
+	},	
 	Gear = {
 		Buy = { 
 			"Master Sprinkler",
@@ -164,12 +112,17 @@ getgenv().ConfigsKaitun = {
 			"Tanning Mirror"
 		},
 		Lock = {
-
+			"Master Sprinkler",
+			"Godly Sprinkler",
+			"Advanced Sprinkler",
+			"Basic Sprinkler",
+			"Lightning Rod",
 		},
 	},
 
 	Eggs = {
 		Place = {
+			"Gourmet Egg",
 			"Zen Egg",
 			"Primal Egg",
 			"Night Egg",
@@ -191,7 +144,6 @@ getgenv().ConfigsKaitun = {
 			"Paradise Egg",
 		}
 	},
-	
 	Pets = {
 		["Start Delete Pet At"] = 40,
 		["Upgrade Slot"] = {
@@ -206,12 +158,13 @@ getgenv().ConfigsKaitun = {
 				["Starfish"] = { 8, 75, 4 },
 			},
 		},
+		Favorite_LockedPet = true,
 		Locked_Pet_Age = 50, -- pet that age > 60 will lock
 		Locked = {
+			"French Fry Ferret",
+			"Spaghetti Sloth",
 			"Corrupted Kitsune",
 			"Kitsune",
-			"Kappa",
-			"Tanchozuru",
 			"Disco Bee",
 			"Butterfly",
 			"Queen Bee",
@@ -219,14 +172,11 @@ getgenv().ConfigsKaitun = {
 			"Raccoon",
 			"Red Fox",
 			"Mimic Octopus",
-			"Hyacinth Macaw",
 			"Brontosaurus",
 			"Dilophosaurus",
 			"Ankylosaurus",
 			"Spinosaurus",
 			"T-Rex",
-			"Mizuchi",
-			"Raiju",
 			"Corrupted Kodama",
 			["Tarantula Hawk"] = 2,
 			["Bald Eagle"] = 5,
@@ -243,10 +193,7 @@ getgenv().ConfigsKaitun = {
 			["Triceratops"] = 5,
 			["Bee"] = 3,
 		},
-		LockPet_Weight = 5, -- if Weight >= 7 they will locked,
-		Instant_Sell = {
-
-		}
+		LockPet_Weight = 5, -- if Weight >= 10 they will locked
 	},
 
 	Webhook = {
@@ -269,6 +216,7 @@ getgenv().ConfigsKaitun = {
 			},
 			Pets = {
 				"Kitsune",
+				"French Fry Ferret",
 			},
 			Pet_Weight_Noti = true,
 		}
