@@ -1,6 +1,8 @@
 setfpscap(3)
 task.wait(10)
 getgenv().ConfigsKaitun = {
+	Beta_Fix_Data_Sync = true,
+
 	["Block Pet Gift"] = true,
 
 	Collect_Cooldown = 60, -- cooldown to collect fruit
