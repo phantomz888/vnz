@@ -3,10 +3,11 @@ task.wait(10)
 getgenv().ConfigsKaitun = {
 	Beta_Fix_Data_Sync = true,
 
+	NoDeletePlayer = false,
+
 	["Block Pet Gift"] = true,
 
-	Collect_Cooldown = 60, -- cooldown to collect fruit
-	JustFuckingCollectAll = false, -- Collect all (fruit not wait mutation)
+	Collect_Cooldown = 120, -- cooldown to collect fruit
 
 	["Low Cpu"] = true,
 	["Auto Rejoin"] = true,
@@ -14,7 +15,7 @@ getgenv().ConfigsKaitun = {
 	["Rejoin When Update"] = false,
 	["Limit Tree"] = {
 		["Limit"] = 200,
-		["Destroy Untill"] = 150,
+		["Destroy Until"] = 150,
 
 		["Safe Tree"] = {
 			"Moon Blossom",
@@ -64,6 +65,14 @@ getgenv().ConfigsKaitun = {
 	Events = {
 		["Cook Event"] = {
 			Minimum_Money = 1_000_000, -- minimum money to start play this event
+			Rewards_Item = { -- The top is the most top mean prefered.
+				"Gorilla Chef",
+				"Gourmet Egg",
+				"Culinarian Chest",
+				"Gourmet Seed Pack",
+				"Sunny-Side Chicken",
+				-- u can add it more as u want, if it not in list.
+			}
 		},
 		["Traveling Shop"] = {
 			"Bee Egg",
@@ -77,7 +86,8 @@ getgenv().ConfigsKaitun = {
 			"Zen Egg",
 		},
 		Start_Do_Honey = 1_000_000 -- start trade fruit for honey at money
-	},	
+	},
+
 	Gear = {
 		Buy = { 
 			"Master Sprinkler",
@@ -85,10 +95,9 @@ getgenv().ConfigsKaitun = {
 			"Advanced Sprinkler",
 			"Basic Sprinkler",
 			"Lightning Rod",
-			"Medium Toy",
+			"Level Up Lollipop",
 			"Medium Treat",
-			"Levelup Lollipop",
-			"Tanning Mirror"
+			"Medium Toy",
 		},
 		Lock = {
 			"Master Sprinkler",
@@ -110,7 +119,6 @@ getgenv().ConfigsKaitun = {
 			"Dinosaur Egg",
 			"Oasis Egg",
 			"Paradise Egg",
-
 		},
 		Buy = {
 			"Zen Egg",
@@ -123,6 +131,7 @@ getgenv().ConfigsKaitun = {
 			"Paradise Egg",
 		}
 	},
+
 	Pets = {
 		["Start Delete Pet At"] = 40,
 		["Upgrade Slot"] = {
@@ -137,8 +146,8 @@ getgenv().ConfigsKaitun = {
 				["Starfish"] = { 8, 75, 4 },
 			},
 		},
-		Favorite_LockedPet = false,
-		Locked_Pet_Age = 50, -- pet that age > 60 will lock
+		Favorite_LockedPet = true,
+		Locked_Pet_Age = 60, -- pet that age > 60 will lock
 		Locked = {
 			"French Fry Ferret",
 			"Spaghetti Sloth",
@@ -189,7 +198,6 @@ getgenv().ConfigsKaitun = {
 				"Honeysuckle",
 				"Bone Blossom",
 				"Fossilight",
-
 			},
 			SeedPack = {
 				"Idk"
@@ -202,5 +210,6 @@ getgenv().ConfigsKaitun = {
 		}
 	},
 }
+
 License = "287MIU1KAqEbt6zgPcB9hUvDHbJPDz48"
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Real-Aya/Loader/main/Init.lua'))()
