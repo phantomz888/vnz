@@ -1,5 +1,5 @@
 setfpscap(3)
-task.wait(10)
+task.wait(15)
 getgenv().ConfigsKaitun = {
 	Beta_Fix_Data_Sync = true,
 
