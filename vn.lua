@@ -13,17 +13,27 @@ getgenv().ConfigsKaitun = {
 
 	["Rejoin When Update"] = false,
 	["Limit Tree"] = {
-		["Limit"] = 200,
-		["Destroy Untill"] = 150,
+		["Limit"] = 800,
+		["Destroy Until"] = 0,
 
 		["Safe Tree"] = {
-			"Moon Blossom",
-			"Bone Blossom",
-			"Moon Melon",
+			["Carrot"] = 200,
+			["Blueberry"] = 200,
+			["Pepper"] = 200,
+			["Tomato"] = 200,
 			"Maple Apple",
+			"Sunflower",
+			"Dragon Pepper",
+			"Elephant Ears",
+			"Moon Melon",
+			"Easter Egg",
+			"Moon Mango",
+			"Bone Blossom",
 			"Fossilight",
 			"Tranquil Bloom",
 			"Grand Tomato",
+			"King Cabbage",
+			"Princess Thorn",
 		}
 	},
 
@@ -51,6 +61,8 @@ getgenv().ConfigsKaitun = {
 				"Fossilight",
 				"Tranquil Bloom",
 				"Grand Tomato",
+				"King Cabbage",
+				"Princess Thorn",
 			}
 		}
 	},
@@ -60,10 +72,19 @@ getgenv().ConfigsKaitun = {
 
 		}
 	},
-
+	
 	Events = {
-		["Cook Event"] = {
-			Minimum_Money = 1_000_000, -- minimum money to start play this event
+		["Bean Event"] = {
+			Minimum_Money = 10_000_000, -- minimum money to start play this event
+		},
+		Shop = { -- un comment to buy
+			"Sprout Seed Pack",
+			"Sprout Egg",
+			-- "Mandrake",
+			"Silver Fertilizer",
+			-- "Canary Melon",
+			-- "Amberheart",
+			"Spriggan",
 		},
 		["Traveling Shop"] = {
 			"Bee Egg",
@@ -76,8 +97,9 @@ getgenv().ConfigsKaitun = {
 		Shop = {
 			"Zen Egg",
 		},
-		Start_Do_Honey = 1_000_000 -- start trade fruit for honey at money
-	},	
+		Start_Do_Honey = 2_000_000 -- start trade fruit for honey at money
+	},
+
 	Gear = {
 		Buy = { 
 			"Master Sprinkler",
@@ -101,45 +123,48 @@ getgenv().ConfigsKaitun = {
 
 	Eggs = {
 		Place = {
-			"Gourmet Egg",
+			"Sprout Egg",
 			"Zen Egg",
+			"Gourmet Egg",
 			"Primal Egg",
-			"Night Egg",
-			"Bug Egg",
-			"Anti Bee Egg",
 			"Dinosaur Egg",
-			"Oasis Egg",
+			"Anti Bee Egg",
 			"Paradise Egg",
-
+			"Bug Egg",
 		},
 		Buy = {
-			"Zen Egg",
-			"Primal Egg",
-			"Night Egg",
-			"Bug Egg",
-			"Anti Bee Egg",
-			"Dinosaur Egg",
+			"Sprout Egg",
+			"Bee Egg",
 			"Oasis Egg",
 			"Paradise Egg",
+			"Anti Bee Egg",
+			"Night Egg",
+			"Rare Summer Egg",
+			"Bug Egg",
+			"Mythical Egg",
+			"Common Summer Egg",
+			"Common Egg",
 		}
 	},
+
 	Pets = {
-		["Start Delete Pet At"] = 40,
+		["Start Delete Pet At"] = 50,
 		["Upgrade Slot"] = {
 			["Pet"] = {
-				["Starfish"] = { 8, 75, 1 },
+				["Starfish"] = { 7, 100, 1, true },
 			},
-			["Limit Upgrade"] = 5,
+			["Limit Upgrade"] = 5, -- max is 5 (more than or lower than 1 will do nothing)
 			["Equip When Done"] = {
-				["Tarantula Hawk"] = { 2, 101, 1 },
-				["Blood Kiwi"] = { 4, 101, 2 },
-				["Rooster"] = { 2, 101, 3 },
-				["Starfish"] = { 8, 75, 4 },
+				["Gorilla Chef"] = { 8, 101, 1 },
+				["Bacon Pig"] = { 4, 101, 2 },
+				["Spaghetti Sloth"] = { 4, 101, 3 },
 			},
 		},
 		Favorite_LockedPet = false,
 		Locked_Pet_Age = 50, -- pet that age > 60 will lock
 		Locked = {
+			"Golden Goose",
+			"Golem",
 			"French Fry Ferret",
 			"Spaghetti Sloth",
 			"Corrupted Kitsune",
@@ -196,7 +221,6 @@ getgenv().ConfigsKaitun = {
 			},
 			Pets = {
 				"Kitsune",
-				"French Fry Ferret",
 			},
 			Pet_Weight_Noti = true,
 		}
