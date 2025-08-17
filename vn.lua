@@ -1,47 +1,180 @@
 setfpscap(4)
-task.wait(15)
+task.wait(5)
 getgenv().ConfigsKaitun = {
 	Beta_Fix_Data_Sync = true,
 
+	NoDeletePlayer = false,
+
 	["Block Pet Gift"] = true,
 
-	Collect_Cooldown = 60, -- cooldown to collect fruit
-	JustFuckingCollectAll = false, -- Collect all (fruit not wait mutation)
+	Collect_Cooldown = 300,
+	JustFuckingCollectAll = false, -- Collect all (fruit not wait mutation) -- cooldown to collect fruit
 
 	["Low Cpu"] = true,
-	["Auto Rejoin"] = true,
-
+	["Auto Rejoin"] = false,
+	
 	["Rejoin When Update"] = false,
 	["Limit Tree"] = {
-		["Limit"] = 800,
-		["Destroy Until"] = 0,
-
+		["Limit"] = 450,
+		["Destroy Untill"] = 450,
+		
 		["Safe Tree"] = {
-			["Carrot"] = 200,
-			["Blueberry"] = 200,
-			["Pepper"] = 200,
-			["Tomato"] = 200,
+			"Moon Blossom",
+			"Bone Blossom",
+			"Moon Melon",
 			"Maple Apple",
-			"Sunflower",
+			"Moon Mango",
 			"Dragon Pepper",
 			"Elephant Ears",
-			"Moon Melon",
-			"Easter Egg",
-			"Moon Mango",
-			"Bone Blossom",
 			"Fossilight",
-			"Tranquil Bloom",
-			"Grand Tomato",
-			"King Cabbage",
 			"Princess Thorn",
+			["Blueberry"] = 12,
+			["Strawberry"] = 12,
+			["Apple"] = 10,
+			["Coconut"] = 12,
+			["Dragon Fruit"] = 12,
+			["Mango"] = 12,
+			["Tomato"] = 20,
+			["Cactus"] = 12,
 		}
 	},
 
 	Seed = {
 		Buy = {
-			Mode = "Auto", -- Custom , Auto
-			Custom = { -- any fruit u need to place
+			Mode = "Custom", -- Custom , Auto
+			Custom = {
 				"Carrot",
+				"Blueberry",
+				"Grape",
+                "Strawberry",
+                "Elder Strawberry",
+                "Wild Carrot",
+                "Taro Flower",
+                "Mandrake",
+                "Rhubarb",
+                "Onion",
+                "Tall Asparagus",
+                "Candy Sunflowers",
+                "Red Lollipop",
+                "Sugarglaze",
+                "Cherry Blossom",
+                "Crocus",
+                "Daffodil",
+                "Orange Tulip",
+                "Nightshade",
+                "Moonflower",
+                "Moon Blossom",
+                "Rose",
+                "Foxglove",
+                "Lilac",
+                "Pink Lily",
+                "Purple Dagila",
+                "Sunflower",
+                "Lavender",
+                "Honeysuckle",
+                "Manuka Flower",
+                "Ember Lily",
+                "Parasol Flower",
+                "Rosy Delight",
+                "Lily Of The Valley",
+                "Burning Bud",
+                "Rafflesia",
+                "Stonebite",
+                "Liberty Lily",
+                "Firework Flower",
+                "Serenity",
+                "Moboblooma",
+                "Soft Sunshine",
+                "Hinomai",
+                "Zenflare",
+                "Dezen",
+                "Artichoke",
+                "Veinpetal",
+                "Flare Daisy",
+                "Tranquil Bloom",
+                "Apple",
+                "Avocado",
+                "Banana",
+                "Coconut",
+                "Dragon Fruit",
+                "Durian",
+                "Mango",
+                "Pear",
+                "Pineapple",
+                "Watermelon",
+                "Starfruit",
+                "Blood Banana",
+                "Moon Melon",
+                "Moon Mango",
+                "Nectarine",
+                "Hive Fruit",
+                "Green Apple",
+                "Sugar Apple",
+                "Traveler's Fruit",
+                "Loquat",
+                "Kiwi",
+                "Maple Apple",
+                "Spiked Mango",
+                "Crown Melon",
+                "Grand Tomato",
+                "Pricklefruit",
+                "Mangosteen",
+                "Canary Melon",
+                "Pumpkin",
+                "Tomato",
+                "Cantaloupe",
+                "Cacao",
+                "Beanstalk",
+                "Mint",
+                "Moonglow",
+                "Elephant Ears",
+                "Cauliflower",
+                "Pitcher Plant",
+                "Firefly Fern",
+                "Giant Pinecone",
+                "Soft Sunshine",
+                "Dragon Sapling",
+                "Sakura Bush",
+                "Princess Thorn",
+                "Romanesco",
+                "Nectar Thorn",
+                "Papaya",
+				"Cocovine",
+				"Pepper",
+				"Dragon Pepper",
+				"Bell Pepper",
+				"Jalapeno",
+				"Badlands Pepper",
+				"Feijoa",
+				"Duskpuff",
+				"Gleamroot",
+				"Amberheart",
+				"Cactus",
+				"Horned Dinoshroom",
+				"Twisted Tangle",
+				"Sinisterdrip",
+				"Amber Spine",
+				"Mushroom",
+				"Grand Volcania",
+				"Bamboo",
+				"Bendboo",
+				"Lotus",
+				"Lucky Bamboo",
+				"Spring Onion",
+				"Poseidon Plant",
+				"Delphinium",
+				"Guanabanana",
+				"Butternut Squash",
+				"Paradise Petal",
+				"Boneboo",
+				"Fossilight",
+				"Bone Blossom",
+				"Gorsetail",
+				"Lingonberry",
+				"Zen Rocks",
+				"Enkaku",
+				"Corn",
+
 			}
 		},
 		Place = {
@@ -50,56 +183,58 @@ getgenv().ConfigsKaitun = {
 				"Carrot"
 			},
 			Lock = {
-				"Maple Apple",
-				"Sunflower",
-				"Dragon Pepper",
-				"Elephant Ears",
-				"Moon Melon",
-				"Easter Egg",
-				"Moon Mango",
-				"Bone Blossom",
-				"Fossilight",
-				"Tranquil Bloom",
-				"Grand Tomato",
-				"King Cabbage",
-				"Princess Thorn",
+
 			}
 		}
 	},
-
+	
 	["Seed Pack"] = {
 		Locked = {
-
+			
 		}
 	},
 	
 	Events = {
 		["Bean Event"] = {
-			Minimum_Money = 10_000_000, -- minimum money to start play this event
+			Minimum_Money = 100_000, -- minimum money to start play this event
 		},
-		Shop = { -- un comment to buy
-			"Sprout Seed Pack",
+		MaxMoney_Restocks = 5_000_000_000,
+		Shop = { -- delete -- to buy
 			"Sprout Egg",
-			-- "Mandrake",
+			"Sprout Seed Pack",
+			"Mandrake",
 			"Silver Fertilizer",
 			-- "Canary Melon",
 			-- "Amberheart",
 			"Spriggan",
 		},
 		["Traveling Shop"] = {
-			"Bee Egg",
+            "Bee Egg",
+			"Bald Eagle",
+            "Cauliflower",
+            "Rafflesia",
+            "Green Apple",
+            "Avocado",
+            "Banana",
+            "Pineapple",
+            "Kiwi",
+            "Bell Pepper",
+            "Prickly Pear",
+            "Loquat",
+            "Feijoa",
+            "Pitcher Plant",
+            "Flower Seed Pack"
 		},
 		Craft = {
+			"Primal Egg",
 			"Ancient Seed Pack",
 			"Anti Bee Egg",
-			"Primal Egg",
+			--"Honeysuckle",
+			--"Lightning Rod",
 		},
-		Shop = {
-			"Zen Egg",
-		},
-		Start_Do_Honey = 2_000_000 -- start trade fruit for honey at money
+		Start_Do_Honey = 100_000
 	},
-
+	
 	Gear = {
 		Buy = { 
 			"Master Sprinkler",
@@ -109,15 +244,12 @@ getgenv().ConfigsKaitun = {
 			"Lightning Rod",
 			"Medium Toy",
 			"Medium Treat",
-			"Levelup Lollipop",
-			"Tanning Mirror"
+			"Level Up Lollipop",
+			"Tanning Mirror",
+			"Grandmaster Spinkler"
 		},
 		Lock = {
-			"Master Sprinkler",
-			"Godly Sprinkler",
-			"Advanced Sprinkler",
-			"Basic Sprinkler",
-			"Lightning Rod",
+
 		},
 	},
 
@@ -131,37 +263,55 @@ getgenv().ConfigsKaitun = {
 			"Anti Bee Egg",
 			"Paradise Egg",
 			"Bug Egg",
+			"Common Summer Egg",
+			"Rare Egg",
 		},
 		Buy = {
 			"Sprout Egg",
-			"Bee Egg",
+			"Gourmet Egg",
+			"Zen Egg",
+			"Primal Egg",
+			"Night Egg",
+			"Bug Egg",
+			"Anti Bee Egg",
+			"Dinosaur Egg",
 			"Oasis Egg",
 			"Paradise Egg",
-			"Anti Bee Egg",
-			"Night Egg",
+			--"Mythical Egg",
+			"Legendary Egg",
+			"Bee Egg",
 			"Rare Summer Egg",
-			"Bug Egg",
-			"Mythical Egg",
 			"Common Summer Egg",
-			"Common Egg",
+			"Rare Egg",
+			"Uncommon Egg",
+			"Common Egg"
 		}
 	},
-
+	
 	Pets = {
 		["Start Delete Pet At"] = 50,
 		["Upgrade Slot"] = {
 			["Pet"] = {
-				["Starfish"] = { 7, 100, 1, true },
+				--["Bacon Pig"] = { 8, 75, 1 },
+				["Starfish"] = { 8, 75, 1 },
 			},
-			["Limit Upgrade"] = 5, -- max is 5 (more than or lower than 1 will do nothing)
+			["Limit Upgrade"] = 5,
 			["Equip When Done"] = {
-				["Gorilla Chef"] = { 8, 101, 1 },
-				["Bacon Pig"] = { 4, 101, 2 },
-				["Spaghetti Sloth"] = { 4, 101, 3 },
+				["Tarantula Hawk"] = { 2, 101, 1 },
+				--["Gorilla Chef"] = { 8, 101, 1 },
+				--["Bacon Pig"] = { 8, 101, 2 },
+				--["Tanchozuru"] = { 8, 101, 3 },
+				--["Kappa"] = { 8, 101, 4 },
+				--["Spaghetti Sloth"] = { 8, 101, 5 },
+				--["Corrupted Kodama"] = { 8, 101, 6 },
+				--["Kodama"] = { 8, 101, 7 },
+				["Blood Kiwi"] = { 8, 101, 2 },
+				["Rooster"] = { 8, 101, 3 },
+				["Sunny-Side Chicken"] = { 1, 101, 4 },
+				["Starfish"] = { 8, 75, 5 },
 			},
 		},
 		Favorite_LockedPet = false,
-		Locked_Pet_Age = 50, -- pet that age > 60 will lock
 		Locked = {
 			"Golden Goose",
 			"Golem",
@@ -197,8 +347,24 @@ getgenv().ConfigsKaitun = {
 			["Nihonzaru"] = 5,
 			["Triceratops"] = 5,
 			["Bee"] = 3,
+			["Spriggan"] = 5,
+			["Sunny-Side Chicken"] = 1,
 		},
-		LockPet_Weight = 5, -- if Weight >= 10 they will locked
+		LockPet_Weight = 5, -- if Weight >= 7 they will locked,
+		Instant_Sell = {
+			"Grey Mouse",
+			"Squirrel",
+			"Snail",
+			"Orangutan",
+			"Brown Mouse",
+			"Bunny",
+			"Crab",
+			"Caterpillar",
+			"Shiba Inu",
+			"Tanuki",
+			"Manaki-Neko",
+			"Seagull",
+		}
 	},
 
 	Webhook = {
