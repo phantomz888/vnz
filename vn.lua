@@ -19,6 +19,7 @@ getgenv().ConfigsKaitun = {
 		["Destroy Untill"] = 450,
 		
 		["Safe Tree"] = {
+			"Cyclamen",
 			"Moon Blossom",
 			"Bone Blossom",
 			"Moon Melon",
@@ -174,7 +175,6 @@ getgenv().ConfigsKaitun = {
 				"Zen Rocks",
 				"Enkaku",
 				"Corn",
-
 			}
 		},
 		Place = {
@@ -183,7 +183,7 @@ getgenv().ConfigsKaitun = {
 				"Carrot"
 			},
 			Lock = {
-
+				"Cyclamen",
 			}
 		}
 	},
@@ -199,14 +199,17 @@ getgenv().ConfigsKaitun = {
 			Minimum_Money = 100_000, -- minimum money to start play this event
 		},
 		MaxMoney_Restocks = 5_000_000_000,
-		Shop = { -- delete -- to buy
-			"Sprout Egg",
+		Shop = { -- un comment to buy
 			"Sprout Seed Pack",
-			"Mandrake",
+			"Sprout Egg",
+			-- "Mandrake",
 			"Silver Fertilizer",
 			-- "Canary Melon",
 			-- "Amberheart",
-			"Spriggan",
+			["Spriggan"] = 8,
+			-- Friend Shop
+			"Skyroot Chest",
+			"Pet Shard GiantBean",
 		},
 		["Traveling Shop"] = {
             "Bee Egg",
@@ -229,8 +232,8 @@ getgenv().ConfigsKaitun = {
 			"Primal Egg",
 			"Ancient Seed Pack",
 			"Anti Bee Egg",
-			--"Honeysuckle",
-			--"Lightning Rod",
+			"Pet Shard GiantBean",
+			"Sprout Egg",
 		},
 		Start_Do_Honey = 100_000
 	},
@@ -289,6 +292,7 @@ getgenv().ConfigsKaitun = {
 	},
 	
 	Pets = {
+		["Auto Feed"] = true,
 		["Start Delete Pet At"] = 50,
 		["Upgrade Slot"] = {
 			["Pet"] = {
@@ -311,8 +315,10 @@ getgenv().ConfigsKaitun = {
 				["Starfish"] = { 8, 75, 5 },
 			},
 		},
+		Unfavorite_AllPet = true,
 		Favorite_LockedPet = false,
 		Locked = {
+			"Griffin",
 			"Golden Goose",
 			"Golem",
 			"French Fry Ferret",
