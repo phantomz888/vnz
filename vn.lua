@@ -328,8 +328,8 @@ getgenv().ConfigsKaitun = {
 				["Starfish"] = { 8, 75, 6 },
 			},
 		},
-		Unfavorite_AllPet = false,
-		Favorite_LockedPet = true,
+		Unfavorite_AllPet = true,
+		Favorite_LockedPet = false,
 		Locked = {
 			"Disco Bee",
 			"Butterfly",
@@ -438,4 +438,5 @@ getgenv().ConfigsKaitun = {
 	},
 }
 License = "287MIU1KAqEbt6zgPcB9hUvDHbJPDz48"
+
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Real-Aya/Loader/main/Init.lua'))()
