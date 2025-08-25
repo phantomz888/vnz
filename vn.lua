@@ -229,6 +229,10 @@ getgenv().ConfigsKaitun = {
             "Feijoa",
             "Pitcher Plant",
             "Flower Seed Pack",
+			"Common Summer Egg",
+			"Rare Summer Egg",
+			"Paradise Egg"
+
 		},
 		Craft = {
 			"Sprout Egg",
@@ -274,6 +278,7 @@ getgenv().ConfigsKaitun = {
 			--"Oasis Egg",
 			--"Mythical Egg",
 			--"Legendary Egg",
+			"Rare Summer Egg",
 			"Common Summer Egg",
 			"Rare Egg",
 			"Uncommon Egg",
@@ -292,7 +297,7 @@ getgenv().ConfigsKaitun = {
 			--"Mythical Egg",
 			--"Legendary Egg",
 			"Bee Egg",
-			--"Rare Summer Egg",
+			"Rare Summer Egg",
 			"Common Summer Egg",
 			"Rare Egg",
 			"Uncommon Egg",
@@ -387,6 +392,7 @@ getgenv().ConfigsKaitun = {
 			"Deer",
 			"Spotted Deer",
 			"Pig",
+			"Elk",
 		}
 	},
 
