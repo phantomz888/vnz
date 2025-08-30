@@ -183,6 +183,7 @@ getgenv().ConfigsKaitun = {
 				"Briar Rose",
 				"Spirit Flower",
 				"Wispwing",
+
 			}
 		},
 		Place = {
@@ -293,24 +294,25 @@ getgenv().ConfigsKaitun = {
 	Eggs = {
 		Place = {
 			"Enchanted Egg",
+			"Bug Egg",
+			"Paradise Egg",
 			"Sprout Egg",
 			--"Gourmet Egg",
 			--"Zen Egg",
 			"Anti Bee Egg",
 			--"Primal Egg",
-			"Bug Egg",
-			"Paradise Egg",
 			--"Night Egg",
 			--"Dinosaur Egg",
 			--"Oasis Egg",
-			--"Mythical Egg",
-			--"Legendary Egg",
+			"Mythical Egg",
+			"Legendary Egg",
 			"Rare Summer Egg",
 			"Common Summer Egg",
 			"Rare Egg",
 			"Uncommon Egg",
 		},
 		Buy = {
+			"Enchanted Egg",
 			"Sprout Egg",
 			--"Gourmet Egg",
 			--"Zen Egg",
@@ -321,8 +323,8 @@ getgenv().ConfigsKaitun = {
 			--"Dinosaur Egg",
 			--"Oasis Egg",
 			"Paradise Egg",
-			--"Mythical Egg",
-			--"Legendary Egg",
+			"Mythical Egg",
+			"Legendary Egg",
 			"Bee Egg",
 			"Rare Summer Egg",
 			"Common Summer Egg",
@@ -424,6 +426,8 @@ getgenv().ConfigsKaitun = {
 			"Spotted Deer",
 			"Pig",
 			"Elk",
+			"Monkey",
+			"Mandrake",
 		}
 	},
 
@@ -443,6 +447,7 @@ getgenv().ConfigsKaitun = {
 				"Maple Apple",
 				"Grand Tomato",
 				"Cyclamen",
+				"Wispwing",
 			},
 			SeedPack = {
 				"Idk"
@@ -469,12 +474,12 @@ getgenv().ConfigsKaitun = {
 				"Lobster Thermidor",
 				"Golden Goose",
 				"Griffin",
+				"Cockatrice",
 			},
 			Pet_Weight_Noti = true,
 		}
 	},
 }
 License = "287MIU1KAqEbt6zgPcB9hUvDHbJPDz48"
-
 
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Real-Aya/Loader/main/Init.lua'))()
