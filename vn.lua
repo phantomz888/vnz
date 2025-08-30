@@ -27,14 +27,36 @@ getgenv().ConfigsKaitun = {
 			"Elephant Ears",
 			"Fossilight",
 			"Princess Thorn",
-            ["Blueberry"] = 15,
-            ["Strawberry"] = 15,
-            ["Apple"] = 15,
-            ["Coconut"] = 15,
-            ["Dragon Fruit"] = 15,
-            ["Mango"] = 15,
-            ["Tomato"] = 15,
-            ["Cactus"] = 15,
+			"Wispwing",
+			-- for the event
+			Bamboo = 2,
+			Coconut = 2,
+			Mushroom = 2,
+			Glowthorn = 2,
+			Tomato = 2,
+			Pumpkin = 2,
+			Pepper = 2,
+			Cacao = 2,
+			Apple = 2,
+			Romanesco = 2,
+			["Elder Strawberry"] = 2,
+			["Burning Bud"] = 2,
+			["Giant Pinecone"] = 2,
+			Corn = 2,
+			["Sugar Apple"] = 2,
+			["Ember Lily"] = 2,
+			["Dragon Fruit"] = 2,
+			Sunbulb = 2,
+			["Orange Tulip"] = 2,
+			Blueberry = 2,
+			Watermelon = 2,
+			Mango = 2,
+			Cactus = 2,
+			Strawberry = 2,
+			Beanstalk = 2,
+			Lightshoot = 2,
+			Grape = 2,
+			Daffodil = 2,
 		}
 	},
 
@@ -176,7 +198,7 @@ getgenv().ConfigsKaitun = {
 				"Crown of Thorns",
 				"Calla Lily",
 				"Cyclamen",
-
+				"Wispwing",
 			}
 		},
 		Place = {
@@ -197,8 +219,28 @@ getgenv().ConfigsKaitun = {
 	},
 	
 	Events = {
-		["Bean Event"] = {
+		["Fairy Event"] = {
 			Minimum_Money = 100_000, -- minimum money to start play this event
+			Rewards_Item = {
+				"FairyPoints",
+				"Enchanted Egg",
+				"Enchanted Seed Pack",
+			},
+			Upgrade = {
+				Mode = "Order", -- Order (mean will up on order), Chepest, Highest
+				Order = { -- top upgrade first, not put mean not upgrade
+					"Fairy Spawn Amount",
+					"Loose Fairy Spawn Amount",
+					"Glimmer Multiplier",
+					"Fairy Event Duration",
+				},
+				Limit = {
+					["Glimmer Multiplier"] = 5, -- max 10
+					["Loose Fairy Spawn Amount"] = 4, -- max 4
+					["Fairy Event Duration"] = 5, -- max 10
+					["Fairy Spawn Amount"] = 9, -- max 9
+				}
+			}
 		},
 		MaxMoney_Restocks = 8_000_000_000,
 		Shop = { -- delete -- to buy
@@ -266,6 +308,7 @@ getgenv().ConfigsKaitun = {
 
 	Eggs = {
 		Place = {
+			"Enchanted Egg",
 			"Sprout Egg",
 			--"Gourmet Egg",
 			--"Zen Egg",
@@ -356,6 +399,7 @@ getgenv().ConfigsKaitun = {
 			"Lobster Thermidor",
 			"Golden Goose",
 			"Griffin",
+			"Cockatrice",
 			["Sunny-Side Chicken"] = 1,
 			["Tarantula Hawk"] = 2,
 			["Bald Eagle"] = 5,
@@ -444,5 +488,6 @@ getgenv().ConfigsKaitun = {
 	},
 }
 License = "287MIU1KAqEbt6zgPcB9hUvDHbJPDz48"
+
 
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Real-Aya/Loader/main/Init.lua'))()
