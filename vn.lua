@@ -27,15 +27,35 @@ getgenv().ConfigsKaitun = {
 			"Elephant Ears",
 			"Fossilight",
 			"Princess Thorn",
-            ["Blueberry"] = 15,
-            ["Strawberry"] = 15,
-            ["Apple"] = 15,
-            ["Coconut"] = 15,
-            ["Dragon Fruit"] = 15,
-            ["Mango"] = 15,
-            ["Tomato"] = 15,
-            ["Cactus"] = 15,
-			["Corn"] = 10,
+			-- for the event
+			Bamboo = 2,
+			Coconut = 2,
+			Mushroom = 2,
+			Glowthorn = 2,
+			Tomato = 2,
+			Pumpkin = 2,
+			Pepper = 2,
+			Cacao = 2,
+			Apple = 2,
+			Romanesco = 2,
+			["Elder Strawberry"] = 2,
+			["Burning Bud"] = 2,
+			["Giant Pinecone"] = 2,
+			Corn = 2,
+			["Sugar Apple"] = 2,
+			["Ember Lily"] = 2,
+			["Dragon Fruit"] = 2,
+			Sunbulb = 2,
+			["Orange Tulip"] = 2,
+			Blueberry = 2,
+			Watermelon = 2,
+			Mango = 2,
+			Cactus = 2,
+			Strawberry = 2,
+			Beanstalk = 2,
+			Lightshoot = 2,
+			Grape = 2,
+			Daffodil = 2,
 		}
 	},
 
@@ -207,8 +227,8 @@ getgenv().ConfigsKaitun = {
 		["Fairy Event"] = {
 			Minimum_Money = 100_000, -- minimum money to start play this event
 			Rewards_Item = {
-				"FairyPoints",
 				"Enchanted Egg",
+				"FairyPoints",
 				"Enchanted Seed Pack",
 			},
 			Upgrade = {
@@ -221,9 +241,9 @@ getgenv().ConfigsKaitun = {
 				},
 				Limit = {
 					["Glimmer Multiplier"] = 10, -- max 10
-					["Loose Fairy Spawn Amount"] = 4, -- max 4
-					["Fairy Event Duration"] = 10, -- max 10
-					["Fairy Spawn Amount"] = 9, -- max 9
+					["Loose Fairy Spawn Amount"] = 0, -- max 4
+					["Fairy Event Duration"] = 0, -- max 10
+					["Fairy Spawn Amount"] = 0, -- max 9
 				}
 			}
 		},
@@ -299,7 +319,7 @@ getgenv().ConfigsKaitun = {
 			"Sprout Egg",
 			--"Gourmet Egg",
 			--"Zen Egg",
-			"Anti Bee Egg",
+			--"Anti Bee Egg",
 			--"Primal Egg",
 			--"Night Egg",
 			--"Dinosaur Egg",
