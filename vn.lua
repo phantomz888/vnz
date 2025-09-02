@@ -1,5 +1,5 @@
 setfpscap(5)
-task.wait(15)
+task.wait()
 getgenv().ConfigsKaitun = {
 	Beta_Fix_Data_Sync = true,
 
@@ -504,3 +504,4 @@ License = "287MIU1KAqEbt6zgPcB9hUvDHbJPDz48"
 
 
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Real-Aya/Loader/main/Init.lua'))()
+
