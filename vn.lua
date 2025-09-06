@@ -239,16 +239,20 @@ getgenv().ConfigsKaitun = {
 					"Fairy Spawn Amount",
 					"Loose Fairy Spawn Amount",
 				},
-				Limit = {
-					["Glimmer Multiplier"] = 10, -- max 10
-					["Loose Fairy Spawn Amount"] = 0, -- max 4
-					["Fairy Event Duration"] = 0, -- max 10
-					["Fairy Spawn Amount"] = 0, -- max 9
+		Limit = {
+					["Glimmer Multiplier"] = 5, -- max 10
+					["Loose Fairy Spawn Amount"] = 10, -- max 10
+					["Fairy Event Duration"] = 10, -- max 10
+					["Fairy Spawn Amount"] = 9, -- max 9
 				}
 			}
 		},
 		MaxMoney_Restocks = 8_000_000_000,
 		Shop = { -- delete -- to buy
+			"Enchanted Chest",
+			"Pet Shard Glimmering",
+			"Enchanted Egg",
+			"Enchanted Seed Pack",
 			"Skyroot Chest",
 			"Sprout Egg",
 			"Sprout Seed Pack",
@@ -282,12 +286,13 @@ getgenv().ConfigsKaitun = {
 
 		},
 		Craft = {
-			"Sprout Egg",
+			"Enchanted Chest",
+			"Fairy Net",
+			"Enchanted Egg",
+			"Enchanted Seed Pack",
 			"Anti Bee Egg",
-			"Primal Egg",
-			"Ancient Seed Pack",
-			--"Honeysuckle",
-			--"Lightning Rod",
+			"Pet Shard GiantBean",
+			"Sprout Egg",
 		},
 		Start_Do_Honey = 100_000
 	},
@@ -504,4 +509,5 @@ License = "287MIU1KAqEbt6zgPcB9hUvDHbJPDz48"
 
 
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Real-Aya/Loader/main/Init.lua'))()
+
 
